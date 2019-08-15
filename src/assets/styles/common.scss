@@ -1,0 +1,84 @@
+
+* {
+    font-family: PingFang SC,Helvetica Neue,Helvetica,Nimbus Sans L,Arial,Liberation Sans,Hiragino Sans GB,Source Han Sans CN Normal,Microsoft YaHei,Wenquanyi Micro Hei,WenQuanYi Zen Hei,ST Heiti,SimHei,WenQuanYi Zen Hei Sharp,sans-serif;
+    word-break: break-all;
+    outline: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+$lg-size: 1600px;
+$xl-size: 2000px;
+
+body {
+    font-size: 20px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #232323;
+    font-size: .8rem;
+
+    @media (min-width: $lg-size+1) {
+        font-size: 24px;
+    }
+
+    @media (min-width: $xl-size+1) {
+        font-size: 28px;
+    }
+}
+
+.no-select,
+.import-tag,
+.form-group {
+    user-select: none !important;
+}
+
+.neat-font {
+    font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !important;
+    user-select: text !important;
+}
+
+.no-break {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.import-tag {
+    background: #757575;
+    color: #fff;
+    border-radius: .1rem;
+    padding: 0 .2rem;
+    font-size: .8em;
+}
+
+.input-has-right-icon {
+    position: relative;
+    input {
+        padding-right: 2.4rem;
+    }
+    a {
+        line-height: 1.2rem;
+        position: absolute;
+        top: .5rem;
+        right: .4rem;
+    }
+}
+
+.primary-color {
+    color: #305ce0;
+}
+
+.modal-header {
+    h5 {
+        margin-bottom: 0;
+    }
+    a {
+        font-size: 1rem;
+    }
+    padding: 1.5rem 0.8rem .4rem !important;
+}
+.modal-body {
+    padding: .4rem 0.8rem !important;
+}
+.modal-footer {
+    padding: .4rem 0.8rem 1.2rem !important;
+}
